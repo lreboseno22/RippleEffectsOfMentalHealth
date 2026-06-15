@@ -1,0 +1,101 @@
+.slide-5 {
+  background: var(--deep-navy);
+  overflow: hidden;
+}
+
+/* ---------- HEADER ---------- */
+
+.ripple-flow-header {
+  font-family: "DM Serif Display", serif;
+  font-size: 44px;
+  color: var(--warm-white);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ---------- FLOW WRAPPER ---------- */
+
+.ripple-flow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px 60px;
+}
+
+/* ---------- LINE ---------- */
+
+.ripple-line {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    var(--ripple-blue),
+    var(--ripple-light),
+    var(--gold-accent)
+  );
+
+  opacity: 0.4;
+}
+
+/* ---------- STEPS ---------- */
+
+.ripple-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  margin-bottom: 60px;
+
+  width: 70%;
+}
+
+.step-1 { margin-left: 0; }
+.step-2 { margin-left: 10%; }
+.step-3 { margin-left: 20%; }
+.step-4 { margin-left: 30%; }
+
+/* DOT */
+
+.step-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+  background: var(--ripple-light);
+
+  margin-top: 6px;
+
+  box-shadow: 0 0 12px rgba(93, 173, 226, 0.6);
+}
+
+/* TEXT BOX */
+
+.step-content {
+  background: rgba(13, 27, 42, 0.6);
+  border: 1px solid rgba(93, 173, 226, 0.2);
+
+  padding: 18px 22px;
+  border-radius: 12px;
+
+  backdrop-filter: blur(8px);
+
+  max-width: 520px;
+}
+
+.step-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  color: var(--warm-white);
+  margin-bottom: 8px;
+}
+
+.step-body {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}

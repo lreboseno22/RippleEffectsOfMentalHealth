@@ -1,0 +1,51 @@
+.slide-1 {
+  background: var(--deep-navy);
+  position: relative;
+}
+
+.slide-1-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.title-eyebrow {
+  font-family: "Space Mono", monospace;
+
+  letter-spacing: 4px;
+
+  color: var(--ripple-light);
+
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+}
+
+.title-main {
+  font-family: "DM Serif Display", serif;
+
+  font-size: clamp(40px, 6vw, 90px);
+
+  line-height: 1.05;
+}
+
+.title-main em {
+  color: var(--ripple-light);
+}
+
+.title-line {
+  width: 60px;
+  height: 2px;
+
+  margin: 24px auto;
+
+  background: linear-gradient(
+    90deg,
+    var(--ripple-blue),
+    var(--gold-accent)
+  );
+}
+
+.title-sub {
+  color: var(--text-muted);
+}
