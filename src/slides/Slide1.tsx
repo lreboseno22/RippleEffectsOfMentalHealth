@@ -8,9 +8,6 @@ export default function Slide1() {
       <RippleBackground />
 
       <div className="content slide-1-content">
-        <div className="title-eyebrow">
-          A Community Presentation
-        </div>
 
         <h1 className="title-main">
           The Ripple <em>Effects</em>
@@ -21,7 +18,7 @@ export default function Slide1() {
         <div className="title-line" />
 
         <div className="title-sub">
-          Vashawn Swaby · Liam
+          Vashawn Swaby · Liam Reboseno
         </div>
       </div>
     </section>

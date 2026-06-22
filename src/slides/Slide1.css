@@ -9,18 +9,6 @@
   z-index: 2;
 }
 
-.title-eyebrow {
-  font-family: "Space Mono", monospace;
-
-  letter-spacing: 4px;
-
-  color: var(--ripple-light);
-
-  text-transform: uppercase;
-
-  margin-bottom: 24px;
-}
-
 .title-main {
   font-family: "DM Serif Display", serif;
 
@@ -48,4 +36,5 @@
 
 .title-sub {
   color: var(--text-muted);
+  font-size:large;
 }

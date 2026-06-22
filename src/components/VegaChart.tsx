@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import embed from "vega-embed";
+import "./VegaChart.css";
 
 type Props = {
   spec: any;
@@ -17,5 +18,5 @@ export default function VegaChart({ spec }: Props) {
     });
   }, [spec]);
 
-  return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />;
+  return <div ref={containerRef} className="vega-chart" />;
 }

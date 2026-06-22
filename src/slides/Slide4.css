@@ -28,11 +28,18 @@
 }
 
 /* faces */
-.flip-face {
+.flip-face2 {
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
   padding: 40px;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
 }
 
 /* FRONT */
@@ -125,6 +132,7 @@
   color: var(--text-muted);
   margin-top: 8px;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 .chart-section h3 {
@@ -182,13 +190,14 @@
   padding: 14px;
   color: var(--text-muted);
   line-height: 1.6;
+  font-size: 20px
 }
 
 .flip-hint {
   text-align: center;
   margin-top: 20px;
   color: var(--gold-accent);
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
@@ -200,7 +209,7 @@
 }
 
 .chart-card {
-  background: rgba(13, 27, 42, 0.8);
+  background: rgba(193, 205, 217, 0.778);
   border: 1px solid rgba(93, 173, 226, 0.2);
   border-radius: 16px;
   padding: 20px;

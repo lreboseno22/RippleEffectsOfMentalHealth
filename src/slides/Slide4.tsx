@@ -39,7 +39,7 @@ const treatmentData = [
       >
         <div className="flip-inner">
           {/* FRONT SIDE */}
-          <div className="flip-face front">
+          <div className="flip-face2 front">
             <div className="slide4-header">
               <h2>The Numbers Behind the Crisis</h2>
               <p>
@@ -172,7 +172,7 @@ const treatmentData = [
           </div>
 
           {/* BACK SIDE (MAP) */}
-          <div className="flip-face back">
+          <div className="flip-face2 back">
             <div className="map-wrapper">
               <VegaChart spec={nycMapSpec} />
             </div>

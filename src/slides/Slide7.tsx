@@ -13,7 +13,7 @@ export default function Slide7() {
         </div>
 
         <div className="exit-names">
-          Vashawn Swaby · Liam
+          Vashawn Swaby · Liam Reboseno
         </div>
       </div>
     </section>

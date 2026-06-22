@@ -87,8 +87,8 @@ export default function Slide6() {
           className={`hub-node ${active === 0 ? "active" : ""}`}
           style={{
             backgroundImage: `url(${topics[0].image})`,
-            top: "10%",
-            left: "10%",
+            top: "8%",
+            left: "1%",
           }}
           onClick={() => setActive(0)}
         >
@@ -100,7 +100,7 @@ export default function Slide6() {
           style={{
             backgroundImage: `url(${topics[1].image})`,
             top: "40%",
-            left: "-20%",
+            left: "-50%",
           }}
           onClick={() => setActive(1)}
         >
@@ -111,8 +111,8 @@ export default function Slide6() {
           className={`hub-node ${active === 2 ? "active" : ""}`}
           style={{
             backgroundImage: `url(${topics[2].image})`,
-            bottom: "10%",
-            left: "10%",
+            bottom: "8%",
+            left: "1%",
           }}
           onClick={() => setActive(2)}
         >

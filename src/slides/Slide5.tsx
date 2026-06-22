@@ -1,63 +1,67 @@
 import "./Slide5.css";
 
+const stepData = [
+  {
+    key: "housing",
+    title: "Housing Instability",
+    meta: "Step 01",
+    body:
+      "Serious mental health illness can impair a person's ability to maintain a steady income, leading to housing stress, eviction, and unstable shelter.",
+    imageUrl:
+      "https://www.yesmagazine.org/wp-content/uploads/imports/10b022875b9c480993e73038cea81134.gif",
+    imageAlt: "Person in distress near institutional surroundings",
+  },
+  {
+    key: "legal",
+    title: "The Legal System",
+    meta: "Step 02",
+    body:
+      "Housing instability often funnels people into policing and courts, where laws criminalizing homelessness punish survival behavior rather than supporting recovery.",
+    imageUrl:
+      "https://www.postnewsgroup.com/wp-content/uploads/2022/11/mentally-ill-california-prisons-featured-web.jpg",
+    imageAlt: "Courtroom or legal system context",
+  },
+  {
+    key: "food",
+    title: "Food Insecurity",
+    meta: "Step 03",
+    body:
+      "Lack of regular meals drives people into survival mode and increases the likelihood of crisis contacts, which can lead to arrest and deeper involvement with jail systems.",
+    imageUrl:
+      "https://cmsatoday.com/wp-content/uploads/sites/9/2022/06/021-780x470.jpg",
+    imageAlt: "Food insecurity or scarce meal imagery",
+  },
+  {
+    key: "community",
+    title: "Community Impact",
+    meta: "Step 04",
+    body:
+      "When jails become de facto psychiatric shelter, people return to the street disconnected from care and insurance, worsening the cycle of crisis, food insecurity, and homelessness.",
+    imageUrl:
+      "https://nnirr.org/wp-content/uploads/2022/03/Migrant-mental-health-logo-NNIRR.png",
+    imageAlt: "Community members impacted by system failures",
+  },
+];
+
 export default function Slide5() {
   return (
-<section className="slide-page slide-5">
-  <div className="content ripple-flow">
+    <section className="slide-page slide-5">
+      <div className="content ripple-flow">
+        <div className="ripple-flow-header">The Ripple Effects</div>
 
-    {/* TITLE */}
-    <div className="ripple-flow-header">
-      The Ripple Effects
-    </div>
-
-    {/* FLOW LINE */}
-    <div className="ripple-line" />
-
-    {/* STEP 1 */}
-    <div className="ripple-step step-1">
-      <div className="step-dot" />
-      <div className="step-content">
-        <div className="step-title">Individual Mind</div>
-        <div className="step-body">
-          Mental health challenges begin internally—affecting emotions, thinking, and behavior.
-        </div>
+        {stepData.map((step, index) => (
+          <div key={step.key} className={`ripple-step step-${index + 1}`}>
+            <div className="step-image">
+              <img src={step.imageUrl} alt={step.imageAlt} />
+            </div>
+            <div className="step-content">
+              {/* <div className="step-meta">{step.meta}</div> */}
+              <div className="step-title">{step.title}</div>
+              <div className="step-body">{step.body}</div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-
-    {/* STEP 2 */}
-    <div className="ripple-step step-2">
-      <div className="step-dot" />
-      <div className="step-content">
-        <div className="step-title">Family & Relationships</div>
-        <div className="step-body">
-          Strain appears in communication, trust, and emotional connection with loved ones.
-        </div>
-      </div>
-    </div>
-
-    {/* STEP 3 */}
-    <div className="ripple-step step-3">
-      <div className="step-dot" />
-      <div className="step-content">
-        <div className="step-title">School & Performance</div>
-        <div className="step-body">
-          Attendance drops, focus declines, and academic performance is affected.
-        </div>
-      </div>
-    </div>
-
-    {/* STEP 4 */}
-    <div className="ripple-step step-4">
-      <div className="step-dot" />
-      <div className="step-content">
-        <div className="step-title">Community Impact</div>
-        <div className="step-body">
-          Broader systems feel the effects—healthcare, safety, and social stability.
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
   );
 }
